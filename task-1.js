@@ -1,16 +1,22 @@
-/*####Задача 1
+/*# Задача 1
 
 Перепишите код, заменив оператор `if` на тернарный оператор `?`
 
 ```js
-var result;
+const a = 2;
+const b = 1;
+let result = null;
+
 if (a + b < 4) {
-  result = true;
+    result = true;
 } else {
-  result = false;
+    result = false;
 }
+
+console.log(result);
 ```*/
-var a = 1;
-var b = 2;
-var result = (a + b < 4) ? console.log(true) : console.log(false);
+const a = 2;
+const b = 1;
+let result = null;
+result = (a + b < 4) ? console.log(result = true) : console.log(result = false);
 

@@ -1,32 +1,33 @@
 /*
-####Задача 3
+# Задача 3
 
 Перепишите код, заменив оператор `switch` на оператор `if..else`:
 
 ```js
-switch (val) {
-  case 'a':
-    console.log( 'a' );
-    break;
+const value = 'c';
 
-  case 'b':
-  case 'c':
-  case 'd':
-  case 'e':
-    console.log( 'others' );
-    break;
+switch (value) {
+    case 'a':
+        console.log('a');
+        break;
 
-  default:
-    console.log( 'unknown' );
+    case 'b':
+    case 'c':
+    case 'd':
+    case 'e':
+        console.log('others');
+        break;
+
+    default:
+        console.log('unknown');
 }
-```
 */
 
-var val;
+const value = 'c'
 
-if (val == 'a') {
+if (value == 'a') {
 	console.log('a');
-} else if (val == 'b' || val == 'c' || val == 'd' || val == 'e') {
+} else if (value == 'b' || value == 'c' || value == 'd' || value == 'e') {
 	console.log('others' );
 } else {
 	console.log( 'unknown' );
